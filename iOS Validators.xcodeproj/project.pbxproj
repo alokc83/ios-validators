@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9D7D79A5151A2EDE00AB7267 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7D79A4151A2EDE00AB7267 /* Foundation.framework */; };
-		9D7D79AB151A2EDE00AB7267 /* iOS_Validators.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D79AA151A2EDE00AB7267 /* iOS_Validators.m */; };
 		9D7D79B3151A2EDE00AB7267 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7D79B2151A2EDE00AB7267 /* SenTestingKit.framework */; };
 		9D7D79B5151A2EDE00AB7267 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7D79B4151A2EDE00AB7267 /* UIKit.framework */; };
 		9D7D79B6151A2EDE00AB7267 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7D79A4151A2EDE00AB7267 /* Foundation.framework */; };
@@ -31,8 +30,6 @@
 		9D7D79A1151A2EDE00AB7267 /* libiOS Validators.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libiOS Validators.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D7D79A4151A2EDE00AB7267 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9D7D79A8151A2EDE00AB7267 /* iOS Validators-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOS Validators-Prefix.pch"; sourceTree = "<group>"; };
-		9D7D79A9151A2EDE00AB7267 /* iOS_Validators.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOS_Validators.h; sourceTree = "<group>"; };
-		9D7D79AA151A2EDE00AB7267 /* iOS_Validators.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_Validators.m; sourceTree = "<group>"; };
 		9D7D79B1151A2EDE00AB7267 /* iOS ValidatorsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS ValidatorsTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D7D79B2151A2EDE00AB7267 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		9D7D79B4151A2EDE00AB7267 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -97,8 +94,6 @@
 		9D7D79A6151A2EDE00AB7267 /* iOS Validators */ = {
 			isa = PBXGroup;
 			children = (
-				9D7D79A9151A2EDE00AB7267 /* iOS_Validators.h */,
-				9D7D79AA151A2EDE00AB7267 /* iOS_Validators.m */,
 				9D7D79A7151A2EDE00AB7267 /* Supporting Files */,
 			);
 			path = "iOS Validators";
@@ -239,7 +234,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D7D79AB151A2EDE00AB7267 /* iOS_Validators.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
