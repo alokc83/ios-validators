@@ -10,4 +10,18 @@
 
 @interface VALStringLengthValidator : VALValidator
 
+@property (nonatomic, unsafe_unretained) NSUInteger minimumRequiredLength;
+@property (nonatomic, unsafe_unretained) NSUInteger maximumAllowedLength;
+
+/* Designated Initializer */
+- (id) initWithMinimumRequiredLength:(NSUInteger)paramMinimumRequiredLength
+                maximumAllowedLength:(NSInteger)paramMaximumAllowedLength;
+
+/* Convenience Method */
++ (id) newWithMinimumRequiredLength:(NSUInteger)paramMinimumRequiredLength
+               maximumAllowedLength:(NSInteger)paramMaximumAllowedLength;
+
+/* Inherited */
+- (BOOL) isValidObject:(id)paramObject outputError:(NSError *__autoreleasing *)paramOutputError;
+
 @end

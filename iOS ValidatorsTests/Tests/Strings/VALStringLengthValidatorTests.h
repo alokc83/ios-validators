@@ -1,5 +1,5 @@
 //
-//  VALValidatorTests.h
+//  VALStringLengthValidatorTests.h
 //  iOS Validators
 //
 //  Created by Vandad Nahavandipoor on 21/03/2012.
@@ -8,9 +8,11 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface VALValidatorTests : SenTestCase
+@interface VALStringLengthValidatorTests : SenTestCase
 
 - (void) testIsValidObjectWithNilObjects;
-- (void) testIsValidObjectWithNonNilObjects;
+- (void) testIsValidObjectWithEmptyString;
+- (void) testIsValidObjectWithNonStringObjects;
+- (void) testIsValidObjectWithStrings;
 
 @end

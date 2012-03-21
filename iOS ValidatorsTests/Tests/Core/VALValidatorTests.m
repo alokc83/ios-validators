@@ -11,14 +11,19 @@
 
 @implementation VALValidatorTests
 
-- (void) testIsValidObject{
+- (void) testIsValidObjectWithNilObjects{
   
   VALValidator *validator = [[VALValidator alloc] init];
-  
   NSError *error = nil;
-  STAssertTrue([validator isValidObject:nil outputError:nil], @"The result of this method should be TRUE.");
-  STAssertTrue([validator isValidObject:nil outputError:&error], @"The result of this method should be TRUE.");
+  STAssertFalse([validator isValidObject:nil outputError:nil], @"The result of this method should be FALSE as the object being validated is nil.");
+  STAssertFalse([validator isValidObject:nil outputError:&error], @"The result of this method should be FALSE as the object being validated is nil.");
   
+}
+
+- (void) testIsValidObjectWithNonNilObjects{
+  
+  VALValidator *validator = [[VALValidator alloc] init];
+  NSError *error = nil;
   STAssertTrue([validator isValidObject:validator outputError:nil], @"The result of this method should be TRUE.");
   STAssertTrue([validator isValidObject:validator outputError:&error], @"The result of this method should be TRUE.");
   

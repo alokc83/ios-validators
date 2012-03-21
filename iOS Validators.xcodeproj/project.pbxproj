@@ -20,6 +20,7 @@
 		9D91485C151A32F200C71293 /* VALStringLengthValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D91485A151A32F200C71293 /* VALStringLengthValidator.h */; };
 		9D91485D151A32F200C71293 /* VALStringLengthValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D91485B151A32F200C71293 /* VALStringLengthValidator.m */; };
 		9D91485E151A32F200C71293 /* VALStringLengthValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D91485B151A32F200C71293 /* VALStringLengthValidator.m */; };
+		9D914861151A351700C71293 /* VALStringLengthValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D914860151A351700C71293 /* VALStringLengthValidatorTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		9D7D79E3151A317200AB7267 /* VALValidatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VALValidatorTests.m; sourceTree = "<group>"; };
 		9D91485A151A32F200C71293 /* VALStringLengthValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VALStringLengthValidator.h; sourceTree = "<group>"; };
 		9D91485B151A32F200C71293 /* VALStringLengthValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VALStringLengthValidator.m; sourceTree = "<group>"; };
+		9D91485F151A351700C71293 /* VALStringLengthValidatorTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VALStringLengthValidatorTests.h; sourceTree = "<group>"; };
+		9D914860151A351700C71293 /* VALStringLengthValidatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VALStringLengthValidatorTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +251,8 @@
 		9D7D79E1151A315300AB7267 /* Strings */ = {
 			isa = PBXGroup;
 			children = (
+				9D91485F151A351700C71293 /* VALStringLengthValidatorTests.h */,
+				9D914860151A351700C71293 /* VALStringLengthValidatorTests.m */,
 			);
 			path = Strings;
 			sourceTree = "<group>";
@@ -374,6 +379,7 @@
 				9D7D79DA151A30F100AB7267 /* VALValidator.m in Sources */,
 				9D7D79E4151A317200AB7267 /* VALValidatorTests.m in Sources */,
 				9D91485E151A32F200C71293 /* VALStringLengthValidator.m in Sources */,
+				9D914861151A351700C71293 /* VALStringLengthValidatorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

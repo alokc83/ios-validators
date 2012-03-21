@@ -11,6 +11,11 @@
 @implementation VALValidator
 
 - (BOOL) isValidObject:(id)paramObject outputError:(__autoreleasing NSError **)paramOutputError{
+  
+  if (paramObject == nil){
+    return NO;
+  }
+  
   return YES;
 }
 
