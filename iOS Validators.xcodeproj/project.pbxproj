@@ -13,7 +13,13 @@
 		9D7D79B6151A2EDE00AB7267 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7D79A4151A2EDE00AB7267 /* Foundation.framework */; };
 		9D7D79B9151A2EDE00AB7267 /* libiOS Validators.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7D79A1151A2EDE00AB7267 /* libiOS Validators.a */; };
 		9D7D79BF151A2EDE00AB7267 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9D7D79BD151A2EDE00AB7267 /* InfoPlist.strings */; };
-		9D7D79C2151A2EDE00AB7267 /* iOS_ValidatorsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D79C1151A2EDE00AB7267 /* iOS_ValidatorsTests.m */; };
+		9D7D79D8151A30F100AB7267 /* VALValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D7D79D2151A30F100AB7267 /* VALValidator.h */; };
+		9D7D79D9151A30F100AB7267 /* VALValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D79D3151A30F100AB7267 /* VALValidator.m */; };
+		9D7D79DA151A30F100AB7267 /* VALValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D79D3151A30F100AB7267 /* VALValidator.m */; };
+		9D7D79E4151A317200AB7267 /* VALValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D79E3151A317200AB7267 /* VALValidatorTests.m */; };
+		9D91485C151A32F200C71293 /* VALStringLengthValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D91485A151A32F200C71293 /* VALStringLengthValidator.h */; };
+		9D91485D151A32F200C71293 /* VALStringLengthValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D91485B151A32F200C71293 /* VALStringLengthValidator.m */; };
+		9D91485E151A32F200C71293 /* VALStringLengthValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D91485B151A32F200C71293 /* VALStringLengthValidator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +41,12 @@
 		9D7D79B4151A2EDE00AB7267 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		9D7D79BC151A2EDE00AB7267 /* iOS ValidatorsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS ValidatorsTests-Info.plist"; sourceTree = "<group>"; };
 		9D7D79BE151A2EDE00AB7267 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9D7D79C0151A2EDE00AB7267 /* iOS_ValidatorsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOS_ValidatorsTests.h; sourceTree = "<group>"; };
-		9D7D79C1151A2EDE00AB7267 /* iOS_ValidatorsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_ValidatorsTests.m; sourceTree = "<group>"; };
+		9D7D79D2151A30F100AB7267 /* VALValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VALValidator.h; sourceTree = "<group>"; };
+		9D7D79D3151A30F100AB7267 /* VALValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VALValidator.m; sourceTree = "<group>"; };
+		9D7D79E2151A317200AB7267 /* VALValidatorTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VALValidatorTests.h; sourceTree = "<group>"; };
+		9D7D79E3151A317200AB7267 /* VALValidatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VALValidatorTests.m; sourceTree = "<group>"; };
+		9D91485A151A32F200C71293 /* VALStringLengthValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VALStringLengthValidator.h; sourceTree = "<group>"; };
+		9D91485B151A32F200C71293 /* VALStringLengthValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VALStringLengthValidator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +104,7 @@
 		9D7D79A6151A2EDE00AB7267 /* iOS Validators */ = {
 			isa = PBXGroup;
 			children = (
+				9D7D79CB151A306500AB7267 /* Classes */,
 				9D7D79A7151A2EDE00AB7267 /* Supporting Files */,
 			);
 			path = "iOS Validators";
@@ -110,8 +121,7 @@
 		9D7D79BA151A2EDE00AB7267 /* iOS ValidatorsTests */ = {
 			isa = PBXGroup;
 			children = (
-				9D7D79C0151A2EDE00AB7267 /* iOS_ValidatorsTests.h */,
-				9D7D79C1151A2EDE00AB7267 /* iOS_ValidatorsTests.m */,
+				9D7D79DB151A315300AB7267 /* Tests */,
 				9D7D79BB151A2EDE00AB7267 /* Supporting Files */,
 			);
 			path = "iOS ValidatorsTests";
@@ -126,6 +136,122 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9D7D79CB151A306500AB7267 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9D7D79D0151A30F100AB7267 /* Arrays */,
+				9D7D79D1151A30F100AB7267 /* Core */,
+				9D7D79D4151A30F100AB7267 /* Dictionaries */,
+				9D7D79D5151A30F100AB7267 /* Numbers */,
+				9D7D79D6151A30F100AB7267 /* Sets */,
+				9D7D79D7151A30F100AB7267 /* Strings */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		9D7D79D0151A30F100AB7267 /* Arrays */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Arrays;
+			sourceTree = "<group>";
+		};
+		9D7D79D1151A30F100AB7267 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				9D7D79D2151A30F100AB7267 /* VALValidator.h */,
+				9D7D79D3151A30F100AB7267 /* VALValidator.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		9D7D79D4151A30F100AB7267 /* Dictionaries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Dictionaries;
+			sourceTree = "<group>";
+		};
+		9D7D79D5151A30F100AB7267 /* Numbers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Numbers;
+			sourceTree = "<group>";
+		};
+		9D7D79D6151A30F100AB7267 /* Sets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sets;
+			sourceTree = "<group>";
+		};
+		9D7D79D7151A30F100AB7267 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				9D91485A151A32F200C71293 /* VALStringLengthValidator.h */,
+				9D91485B151A32F200C71293 /* VALStringLengthValidator.m */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		9D7D79DB151A315300AB7267 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				9D7D79DC151A315300AB7267 /* Arrays */,
+				9D7D79DD151A315300AB7267 /* Core */,
+				9D7D79DE151A315300AB7267 /* Dictionaries */,
+				9D7D79DF151A315300AB7267 /* Numbers */,
+				9D7D79E0151A315300AB7267 /* Sets */,
+				9D7D79E1151A315300AB7267 /* Strings */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		9D7D79DC151A315300AB7267 /* Arrays */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Arrays;
+			sourceTree = "<group>";
+		};
+		9D7D79DD151A315300AB7267 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				9D7D79E2151A317200AB7267 /* VALValidatorTests.h */,
+				9D7D79E3151A317200AB7267 /* VALValidatorTests.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		9D7D79DE151A315300AB7267 /* Dictionaries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Dictionaries;
+			sourceTree = "<group>";
+		};
+		9D7D79DF151A315300AB7267 /* Numbers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Numbers;
+			sourceTree = "<group>";
+		};
+		9D7D79E0151A315300AB7267 /* Sets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sets;
+			sourceTree = "<group>";
+		};
+		9D7D79E1151A315300AB7267 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -133,6 +259,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D7D79D8151A30F100AB7267 /* VALValidator.h in Headers */,
+				9D91485C151A32F200C71293 /* VALStringLengthValidator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +362,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D7D79D9151A30F100AB7267 /* VALValidator.m in Sources */,
+				9D91485D151A32F200C71293 /* VALStringLengthValidator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,7 +371,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D7D79C2151A2EDE00AB7267 /* iOS_ValidatorsTests.m in Sources */,
+				9D7D79DA151A30F100AB7267 /* VALValidator.m in Sources */,
+				9D7D79E4151A317200AB7267 /* VALValidatorTests.m in Sources */,
+				9D91485E151A32F200C71293 /* VALStringLengthValidator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +514,7 @@
 				9D7D79C7151A2EDE00AB7267 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D7D79C8151A2EDE00AB7267 /* Build configuration list for PBXNativeTarget "iOS ValidatorsTests" */ = {
 			isa = XCConfigurationList;
@@ -390,6 +523,7 @@
 				9D7D79CA151A2EDE00AB7267 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
