@@ -10,8 +10,10 @@
 
 @interface VALValidator : NSObject
 
-/* All subclasses that override this method, must call this method first and return NO if this method
- returns NO. If this method returns YES, the subclass can continue */
+/*
+ All subclasses that override this method, must call this method first and return NO if this method
+ returns NO. If this method returns YES, the subclass can continue.
+ */
 - (BOOL) isValidObject:(id)paramObject outputError:(__autoreleasing NSError **)paramOutputError;
 
 @end

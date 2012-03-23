@@ -77,4 +77,27 @@
   
 }
 
+- (void) testIsValidObjectWithMutableStrings{
+  
+  VALStringLengthValidator *validator = [[VALStringLengthValidator alloc] initWithMinimumRequiredLength:2 maximumAllowedLength:4];
+  NSError *error = nil;
+  
+  NSMutableString *string = [[NSMutableString alloc] init];
+  [string appendString:@"A"];
+  STAssertFalse([validator isValidObject:string outputError:&error], @"This string is 1 character long and fails the criteria [2:4].");
+  
+  [string appendString:@"B"];
+  STAssertTrue([validator isValidObject:string outputError:&error], @"This string is 2 characters long and passes our criteria [2:4].");
+  
+  [string appendString:@"C"];
+  STAssertTrue([validator isValidObject:string outputError:&error], @"This string is 3 characters long and passes our criteria [2:4].");
+  
+  [string appendString:@"D"];
+  STAssertTrue([validator isValidObject:string outputError:&error], @"This string is 3 characters long and passes our criteria [2:4].");
+  
+  [string appendString:@"E"];
+  STAssertFalse([validator isValidObject:string outputError:&error], @"This string is 5 characters long and fails the criteria [2:4].");
+  
+}
+
 @end

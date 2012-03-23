@@ -21,6 +21,12 @@
 		9D91485D151A32F200C71293 /* VALStringLengthValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D91485B151A32F200C71293 /* VALStringLengthValidator.m */; };
 		9D91485E151A32F200C71293 /* VALStringLengthValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D91485B151A32F200C71293 /* VALStringLengthValidator.m */; };
 		9D914861151A351700C71293 /* VALStringLengthValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D914860151A351700C71293 /* VALStringLengthValidatorTests.m */; };
+		9DA4066C151CEB76009B6BB7 /* VALStringCharacterValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DA4066A151CEB76009B6BB7 /* VALStringCharacterValidator.h */; };
+		9DA4066D151CEB76009B6BB7 /* VALStringCharacterValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA4066B151CEB76009B6BB7 /* VALStringCharacterValidator.m */; };
+		9DA40670151CEB85009B6BB7 /* VALStringCharacterValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA4066F151CEB85009B6BB7 /* VALStringCharacterValidatorTests.m */; };
+		9DA40671151CEB8B009B6BB7 /* VALStringCharacterValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA4066B151CEB76009B6BB7 /* VALStringCharacterValidator.m */; };
+		9DA40674151CF4C5009B6BB7 /* VALStringValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DA40672151CF4C5009B6BB7 /* VALStringValidator.h */; };
+		9DA40675151CF4C5009B6BB7 /* VALStringValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA40673151CF4C5009B6BB7 /* VALStringValidator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +56,12 @@
 		9D91485B151A32F200C71293 /* VALStringLengthValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VALStringLengthValidator.m; sourceTree = "<group>"; };
 		9D91485F151A351700C71293 /* VALStringLengthValidatorTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VALStringLengthValidatorTests.h; sourceTree = "<group>"; };
 		9D914860151A351700C71293 /* VALStringLengthValidatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VALStringLengthValidatorTests.m; sourceTree = "<group>"; };
+		9DA4066A151CEB76009B6BB7 /* VALStringCharacterValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VALStringCharacterValidator.h; sourceTree = "<group>"; };
+		9DA4066B151CEB76009B6BB7 /* VALStringCharacterValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VALStringCharacterValidator.m; sourceTree = "<group>"; };
+		9DA4066E151CEB85009B6BB7 /* VALStringCharacterValidatorTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VALStringCharacterValidatorTests.h; sourceTree = "<group>"; };
+		9DA4066F151CEB85009B6BB7 /* VALStringCharacterValidatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VALStringCharacterValidatorTests.m; sourceTree = "<group>"; };
+		9DA40672151CF4C5009B6BB7 /* VALStringValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VALStringValidator.h; sourceTree = "<group>"; };
+		9DA40673151CF4C5009B6BB7 /* VALStringValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VALStringValidator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,8 +204,12 @@
 		9D7D79D7151A30F100AB7267 /* Strings */ = {
 			isa = PBXGroup;
 			children = (
+				9DA40672151CF4C5009B6BB7 /* VALStringValidator.h */,
+				9DA40673151CF4C5009B6BB7 /* VALStringValidator.m */,
 				9D91485A151A32F200C71293 /* VALStringLengthValidator.h */,
 				9D91485B151A32F200C71293 /* VALStringLengthValidator.m */,
+				9DA4066A151CEB76009B6BB7 /* VALStringCharacterValidator.h */,
+				9DA4066B151CEB76009B6BB7 /* VALStringCharacterValidator.m */,
 			);
 			path = Strings;
 			sourceTree = "<group>";
@@ -253,6 +269,8 @@
 			children = (
 				9D91485F151A351700C71293 /* VALStringLengthValidatorTests.h */,
 				9D914860151A351700C71293 /* VALStringLengthValidatorTests.m */,
+				9DA4066E151CEB85009B6BB7 /* VALStringCharacterValidatorTests.h */,
+				9DA4066F151CEB85009B6BB7 /* VALStringCharacterValidatorTests.m */,
 			);
 			path = Strings;
 			sourceTree = "<group>";
@@ -266,6 +284,8 @@
 			files = (
 				9D7D79D8151A30F100AB7267 /* VALValidator.h in Headers */,
 				9D91485C151A32F200C71293 /* VALStringLengthValidator.h in Headers */,
+				9DA4066C151CEB76009B6BB7 /* VALStringCharacterValidator.h in Headers */,
+				9DA40674151CF4C5009B6BB7 /* VALStringValidator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +389,8 @@
 			files = (
 				9D7D79D9151A30F100AB7267 /* VALValidator.m in Sources */,
 				9D91485D151A32F200C71293 /* VALStringLengthValidator.m in Sources */,
+				9DA4066D151CEB76009B6BB7 /* VALStringCharacterValidator.m in Sources */,
+				9DA40675151CF4C5009B6BB7 /* VALStringValidator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +402,8 @@
 				9D7D79E4151A317200AB7267 /* VALValidatorTests.m in Sources */,
 				9D91485E151A32F200C71293 /* VALStringLengthValidator.m in Sources */,
 				9D914861151A351700C71293 /* VALStringLengthValidatorTests.m in Sources */,
+				9DA40670151CEB85009B6BB7 /* VALStringCharacterValidatorTests.m in Sources */,
+				9DA40671151CEB8B009B6BB7 /* VALStringCharacterValidator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

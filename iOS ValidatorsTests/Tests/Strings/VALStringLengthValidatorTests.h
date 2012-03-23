@@ -14,5 +14,6 @@
 - (void) testIsValidObjectWithEmptyString;
 - (void) testIsValidObjectWithNonStringObjects;
 - (void) testIsValidObjectWithStrings;
+- (void) testIsValidObjectWithMutableStrings;
 
 @end

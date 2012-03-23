@@ -7,21 +7,28 @@
 //
 
 #import "VALValidator.h"
+#import "VALStringValidator.h"
 
-@interface VALStringLengthValidator : VALValidator
+@interface VALStringLengthValidator : VALStringValidator
 
 @property (nonatomic, unsafe_unretained) NSUInteger minimumRequiredLength;
 @property (nonatomic, unsafe_unretained) NSUInteger maximumAllowedLength;
 
-/* Designated Initializer */
+/*
+ Designated Initializer.
+ */
 - (id) initWithMinimumRequiredLength:(NSUInteger)paramMinimumRequiredLength
                 maximumAllowedLength:(NSInteger)paramMaximumAllowedLength;
 
-/* Convenience Method */
+/*
+ Convenience Method.
+ */
 + (id) newWithMinimumRequiredLength:(NSUInteger)paramMinimumRequiredLength
                maximumAllowedLength:(NSInteger)paramMaximumAllowedLength;
 
-/* Inherited */
+/*
+ Inherited from the superclass.
+ */
 - (BOOL) isValidObject:(id)paramObject outputError:(NSError *__autoreleasing *)paramOutputError;
 
 @end

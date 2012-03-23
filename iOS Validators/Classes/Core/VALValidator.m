@@ -12,11 +12,13 @@
 
 - (BOOL) isValidObject:(id)paramObject outputError:(__autoreleasing NSError **)paramOutputError{
   
+  BOOL result = YES;
+  
   if (paramObject == nil){
     return NO;
   }
   
-  return YES;
+  return result;
 }
 
 @end

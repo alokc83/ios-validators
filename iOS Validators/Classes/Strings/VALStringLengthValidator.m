@@ -13,7 +13,6 @@
 @synthesize minimumRequiredLength;
 @synthesize maximumAllowedLength;
 
-/* Designated Initializer */
 - (id) initWithMinimumRequiredLength:(NSUInteger)paramMinimumRequiredLength
                 maximumAllowedLength:(NSInteger)paramMaximumAllowedLength{
   
@@ -28,23 +27,16 @@
   
 }
 
-/* Convenience Method */
 + (id) newWithMinimumRequiredLength:(NSUInteger)paramMinimumRequiredLength
                maximumAllowedLength:(NSInteger)paramMaximumAllowedLength{
   return [[self alloc] initWithMinimumRequiredLength:paramMinimumRequiredLength maximumAllowedLength:paramMaximumAllowedLength];
 }
-
 
 - (BOOL) isValidObject:(id)paramObject outputError:(NSError *__autoreleasing *)paramOutputError{
   
   BOOL result = NO;
   
   if ([super isValidObject:paramObject outputError:paramOutputError] == NO){
-    return NO;
-  }
-  
-  /* Make sure we are getting a string object first */
-  if ([paramObject isKindOfClass:[NSString class]] == NO){
     return NO;
   }
   
