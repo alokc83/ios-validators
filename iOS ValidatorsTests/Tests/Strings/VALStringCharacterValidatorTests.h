@@ -13,15 +13,11 @@
 /*
  Nil values getting sent everywhere to check edge cases.
  */
-- (void) testIsValidObjectWithDisallowedCharactersAndNoStringComparingOptionsAndNilParameters;
+- (void) testIsValidObjectWithDisallowedCharactersAndNilParameters;
 
 /*
  The proper values getting past to the test.
  */
-- (void) testIsValidObjectWithDisallowedCharactersAndNoStringComparingOptions;
+- (void) testIsValidObjectWithDisallowedCharacters;
 
-/*
- Testing case-insensitive search with valid strings.
- */
-- (void) testIsValidObjectWithDisallowedCharactersAndCaseInsensitiveStringComparingOptions;
 @end

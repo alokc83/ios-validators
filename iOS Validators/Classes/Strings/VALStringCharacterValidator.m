@@ -11,17 +11,14 @@
 @implementation VALStringCharacterValidator
 
 @synthesize characterSetDisallowed;
-@synthesize stringComparingOptions;
 
 /* Designated Initializer */
-- (id) initWithDisallowedCharactersInSet:(NSCharacterSet *)paramDisallowedCharacterSet 
-                  stringComparingOptions:(NSStringCompareOptions)paramStringComparingOptions;{
+- (id) initWithDisallowedCharactersInSet:(NSCharacterSet *)paramDisallowedCharacterSet{
   
   self = [super init];
   
   if (self != nil){
     characterSetDisallowed = paramDisallowedCharacterSet;
-    stringComparingOptions = paramStringComparingOptions;
   }
   
   return self;
@@ -29,11 +26,9 @@
 }
 
 /* Convenience Methods */
-+ (id) newWithDisallowedCharactersInSet:(NSCharacterSet *)paramDisallowedCharacterSet
-                 stringComparingOptions:(NSStringCompareOptions)paramStringComparingOptions{
++ (id) newWithDisallowedCharactersInSet:(NSCharacterSet *)paramDisallowedCharacterSet{
   
-  return [[self alloc] initWithDisallowedCharactersInSet:paramDisallowedCharacterSet 
-                                  stringComparingOptions:paramStringComparingOptions];
+  return [[self alloc] initWithDisallowedCharactersInSet:paramDisallowedCharacterSet ];
   
 }
 
@@ -48,8 +43,7 @@
   
   NSString *string = (NSString *)paramObject;
   
-  NSRange rangeOfDisallowedCharacters = [string rangeOfCharacterFromSet:self.characterSetDisallowed 
-                                                                options:self.stringComparingOptions];
+  NSRange rangeOfDisallowedCharacters = [string rangeOfCharacterFromSet:self.characterSetDisallowed];
   
   if (rangeOfDisallowedCharacters.location == NSNotFound &&
       rangeOfDisallowedCharacters.length == 0){

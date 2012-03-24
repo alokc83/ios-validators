@@ -11,20 +11,17 @@
 
 @interface VALStringCharacterValidator : VALStringValidator
 
-@property (nonatomic, strong, readonly) NSCharacterSet *characterSetDisallowed;
-@property (nonatomic, unsafe_unretained) NSStringCompareOptions stringComparingOptions;
+@property (nonatomic, strong) NSCharacterSet *characterSetDisallowed;
 
 /*
  Designated Initializer.
  */
-- (id) initWithDisallowedCharactersInSet:(NSCharacterSet *)paramDisallowedCharacterSet
-                  stringComparingOptions:(NSStringCompareOptions)paramStringComparingOptions;
+- (id) initWithDisallowedCharactersInSet:(NSCharacterSet *)paramDisallowedCharacterSet;
 
 /*
  Convenience Methods.
  */
-+ (id) newWithDisallowedCharactersInSet:(NSCharacterSet *)paramDisallowedCharacterSet
-                 stringComparingOptions:(NSStringCompareOptions)paramStringComparingOptions;
++ (id) newWithDisallowedCharactersInSet:(NSCharacterSet *)paramDisallowedCharacterSet;
 
 /*
  Inherited from the superclass.
